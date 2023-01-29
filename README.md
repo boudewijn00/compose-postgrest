@@ -30,7 +30,7 @@ Located at [http://localhost](http://localhost)
 
 **Postgrest**
 
-Located at [http://localhost:3000](http://localhost:8000)
+Located at [http://localhost:8000](http://localhost:8000)
 
 Try things like:
 * [http://localhost:8000/houses](http://localhost:8000/houses)
