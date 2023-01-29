@@ -30,16 +30,13 @@ Located at [http://localhost](http://localhost)
 
 **Postgrest**
 
-Located at [http://localhost:3000](http://localhost:3000)
+Located at [http://localhost:3000](http://localhost:8000)
 
 Try things like:
-* [http://localhost:3000/city](http://localhost:3000/test)
-* [http://localhost:3000/country](http://localhost:3000/country)
-* [http://localhost:3000/countrylanguage](http://localhost:3000/countrylanguage)
-* [http://localhost:3000/city?name=eq.Denver](http://localhost:3000/city?name=eq.Denver)
-* [http://localhost:3000/city?population=gte.5000000](http://localhost:3000/city?population=gte.5000000)
-* [http://localhost:3000/city?district=like.*Island](http://localhost:3000/city?district=like.*Island)
-* [http://localhost:3000/city?district=like.*Island&population=lt.1000&select=id,name](http://localhost:3000/city?district=like.*Island&population=lt.1000&select=id,name)
+* [http://localhost:8000/houses](http://localhost:8000/houses)
+* [http://localhost:8000/houses?city=eq.Kabul](http://localhost:8000/city?name=eq.Kabul)
+* [http://localhost:8000/houses?district=like.Kab*`](http://localhost:8000/houses?city=like.Kab*)
+* [http://localhost:8000/houses?select=id,city](http://localhost:8000/houses?select=id,city)
 
 **Swagger UI**
 
