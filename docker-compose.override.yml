@@ -1,15 +1,15 @@
 version: '3'
 
-services:
+#services:
 
   ##############
   # swagger-ui #
   ##############
-  swagger-ui:
-    container_name: swagger-ui
-    image: swaggerapi/swagger-ui:latest
-    ports:
-      - "8080:8080"
-    environment:
-      - API_URL=http://localhost:8000/
-    restart: always
+  #swagger-ui:
+  #  container_name: swagger-ui
+  #  image: swaggerapi/swagger-ui:latest
+  #  ports:
+  #    - "8080:8080"
+  #  environment:
+  #    - API_URL=http://localhost:8000/
+  #  restart: always
