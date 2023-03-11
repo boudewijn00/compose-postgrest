@@ -27,15 +27,15 @@ services:
   ##################
   # postgrest-demo #
   ##################
-  postgrest-demo:
-    container_name: postgrest-demo
-    image: nginx:mainline-alpine
-    ports:
-      - "80:80"
-    volumes:
-      # anything in html directory is hosted via nginx
-      - "./html:/usr/share/nginx/html"
-    restart: always
+  #postgrest-demo:
+  #  container_name: postgrest-demo
+  #  image: nginx:mainline-alpine
+  #  ports:
+  #    - "8000:80"
+  #  volumes:
+  #    # anything in html directory is hosted via nginx
+  #    - "./html:/usr/share/nginx/html"
+  #  restart: always
 
   #############
   # postgrest #
