@@ -10,7 +10,7 @@ BEGIN;
 SET client_encoding = 'LATIN1';
 
 CREATE TABLE houses (
-    id integer NOT NULL AUTO_INCREMENT,
+    id integer NOT NULL,
     city text NOT NULL,
     street text NOT NULL,
     house_number text NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE houses (
 );
 
 CREATE TABLE notes (
-    id integer NOT NULL AUTO_INCREMENT,
+    id integer NOT NULL,
     title text NOT NULL,
     body text NOT NULL,
     tags json NULL,

@@ -1,9 +1,21 @@
 #!/bin/bash
 
 psql -U ${POSTGRES_USER} <<-END
-    CREATE USER ${DB_ANON_ROLE};
-    GRANT USAGE ON SCHEMA ${DB_SCHEMA} TO ${DB_ANON_ROLE};
-    ALTER DEFAULT PRIVILEGES IN SCHEMA ${DB_SCHEMA} GRANT SELECT, INSERT ON TABLES TO ${DB_ANON_ROLE};
-    GRANT SELECT, INSERT ON ALL SEQUENCES IN SCHEMA ${DB_SCHEMA} TO ${DB_ANON_ROLE};
-    GRANT SELECT, INSERT ON ALL TABLES IN SCHEMA ${DB_SCHEMA} TO ${DB_ANON_ROLE};
+    create role ${POSTGRES_USER} noinherit login password ${POSTGRES_PASSWORD};
+    
+    create role ${DB_ANON_ROLE} nologin;
+    grant ${DB_ANON_ROLE} to ${POSTGRES_USER};
+
+    grant usage on schema ${DB_SCHEMA} to ${DB_ANON_ROLE};
+    alter default privileges in schema ${DB_SCHEMA} grant select on tables to ${DB_ANON_ROLE};
+    grant select on all sequences in schema ${DB_SCHEMA} to ${DB_ANON_ROLE};
+    grant select on all tables in schema ${DB_SCHEMA} to ${DB_ANON_ROLE};
+   
+    create role todo_user nologin;
+    grant todo_user to ${POSTGRES_USER};
+
+    grant usage on schema ${DB_SCHEMA} to todo_user;
+    alter default privileges in schema ${DB_SCHEMA} grant insert on tables to todo_user;
+    grant insert on all sequences in schema ${DB_SCHEMA} to todo_user;
+    grant insert on all tables in schema ${DB_SCHEMA} to todo_user;
 END
