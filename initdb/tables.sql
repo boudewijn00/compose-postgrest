@@ -10,21 +10,19 @@ BEGIN;
 SET client_encoding = 'LATIN1';
 
 CREATE TABLE houses (
-    id integer NOT NULL,
+    id serial primary key,
     city text NOT NULL,
     street text NOT NULL,
     house_number text NOT NULL,
-    zip_code text NOT NULL,
-    PRIMARY KEY (id)
+    zip_code text NOT NULL
 );
 
 CREATE TABLE notes (
-    id integer NOT NULL,
+    id serial primary key,
     title text NOT NULL,
     body text NOT NULL,
     tags json NULL,
-    created timestamp with time zone NOT NULL,
-    PRIMARY KEY (id)
+    created timestamp with time zone NOT NULL
 );
 
 INSERT INTO houses (id, city, street, house_number, zip_code)
