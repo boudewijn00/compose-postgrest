@@ -14,4 +14,5 @@ psql -U ${POSTGRES_USER} <<-END
     create role todo_user;
     GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO todo_user;
     GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO todo_user;
+    GRANT DELETE, INSERT, SELECT, UPDATE ON houses IN SCHEMA public TO todo_user;
 END
