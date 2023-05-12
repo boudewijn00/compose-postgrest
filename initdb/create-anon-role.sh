@@ -16,6 +16,8 @@ psql -U ${POSTGRES_USER} <<-END
 
     grant usage, select on schema ${DB_SCHEMA} to todo_user;
     alter default privileges in schema ${DB_SCHEMA} grant insert on tables to todo_user;
+    alter default privileges in schema ${DB_SCHEMA} grant update on tables to todo_user;
+    alter default privileges in schema ${DB_SCHEMA} grant delete on tables to todo_user;
     alter default privileges grant usage, select on sequences to todo_user;
     grant usage, select on sequence houses_id_seq to todo_user;
     grant usage, select on all tables in schema ${DB_SCHEMA} to todo_user;

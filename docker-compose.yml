@@ -20,7 +20,7 @@ services:
       # anything in initdb directory is created in the database
       # see "How to extend this image" section at https://hub.docker.com/r/_/postgres/
       - "./initdb:/docker-entrypoint-initdb.d"
-      #- "./postgres-docker:/var/lib/postgresql/data"
+      - "./postgres-docker:/var/lib/postgresql/data"
     networks:
       - postgrest-backend
     restart: always
@@ -32,7 +32,7 @@ services:
   #  container_name: postgrest-demo
   #  image: nginx:mainline-alpine
   #  ports:
-  #    - "8000:80"
+  #    - "8003:80"
   #  volumes:
   #    # anything in html directory is hosted via nginx
   #    - "./html:/usr/share/nginx/html"
