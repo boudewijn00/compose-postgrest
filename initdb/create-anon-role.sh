@@ -14,7 +14,12 @@ psql -U ${POSTGRES_USER} <<-END
     create role todo_user nologin;
     grant todo_user to ${POSTGRES_USER};
 
-    grant usage on schema api to todo_user;
-    grant all on public.houses to todo_user;
-    grant usage, select, insert, update, delete on sequence public.houses_id_seq to todo_user;
+    grant usage, select on schema ${DB_SCHEMA} to todo_user;
+    alter default privileges in schema ${DB_SCHEMA} grant insert on tables to todo_user;
+    alter default privileges in schema ${DB_SCHEMA} grant update on tables to todo_user;
+    alter default privileges in schema ${DB_SCHEMA} grant delete on tables to todo_user;
+    alter default privileges grant usage, select on sequences to todo_user;
+    grant usage, select on sequence houses_id_seq to todo_user;
+    grant usage, select on all tables in schema ${DB_SCHEMA} to todo_user;
+    grant usage, select on sequences to todo_user;
 END
