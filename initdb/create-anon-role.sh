@@ -16,4 +16,7 @@ psql -U ${POSTGRES_USER} <<-END
 
     GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO todo_user;
     GRANT DELETE ON houses TO todo_user;
+    GRANT INSERT ON houses TO todo_user;
+    GRANT SELECT ON houses TO todo_user;
+    GRANT UPDATE ON houses TO todo_user;
 END
