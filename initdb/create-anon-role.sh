@@ -1,7 +1,7 @@
 #!/bin/bash
 
 psql -U ${POSTGRES_USER} <<-END
-    create role ${POSTGRES_USER} noinherit login password ${POSTGRES_PASSWORD};
+    create role ${POSTGRES_USER} noinherit login password '${POSTGRES_PASSWORD}';
     
     create role ${DB_ANON_ROLE} nologin;
     grant ${DB_ANON_ROLE} to ${POSTGRES_USER};
