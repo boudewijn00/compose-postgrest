@@ -2,9 +2,6 @@ version: '3'
 
 services:
 
-  ################
-  # postgrest-db #
-  ################
   postgrest-db:
     container_name: postgrest-db
     image: postgres:15-alpine
@@ -26,22 +23,6 @@ services:
       - postgrest-backend
     restart: always
 
-  ##################
-  # postgrest-demo #
-  ##################
-  #postgrest-demo:
-  #  container_name: postgrest-demo
-  #  image: nginx:mainline-alpine
-  #  ports:
-  #    - "8003:80"
-  #  volumes:
-  #    # anything in html directory is hosted via nginx
-  #    - "./html:/usr/share/nginx/html"
-  #  restart: always
-
-  #############
-  # postgrest #
-  #############
   postgrest:
     container_name: postgrest
     image: postgrest/postgrest:latest

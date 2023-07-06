@@ -2,9 +2,6 @@ version: '3'
 
 services:
 
-  ##############
-  # swagger-ui #
-  ##############
   swagger-ui:
     container_name: swagger-ui
     image: swaggerapi/swagger-ui:latest
