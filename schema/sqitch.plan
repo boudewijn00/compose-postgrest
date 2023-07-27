@@ -4,3 +4,4 @@
 users 2023-07-21T18:59:57Z Boudewijn Overvliet <boudewijnovervliet@BoudewiacStudio.fritz.box> # add table definition
 test 2023-07-21T19:28:01Z Boudewijn Overvliet <boudewijnovervliet@BoudewiacStudio.fritz.box> # add table definition
 test_column 2023-07-21T19:32:09Z Boudewijn Overvliet <boudewijnovervliet@BoudewiacStudio.fritz.box> # add test column
+full_text_search_index 2023-07-27T17:53:11Z Boudewijn Overvliet <boudewijnovervliet@BoudewiacStudio.fritz.box> #    full_text_search_index\n     deploy/full_text_search_index.sql\n     revert/full_text_search_index.sql\n     verify/full_text_search_index.sql
