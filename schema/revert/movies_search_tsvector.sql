@@ -2,7 +2,7 @@
 
 BEGIN;
 
-DROP COLUMN IF EXISTS search;
+ALTER TABLE movies DROP COLUMN search;
 DROP INDEX IF EXISTS idx_search;
 
 COMMIT;
