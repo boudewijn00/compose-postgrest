@@ -2,6 +2,6 @@
 
 BEGIN;
 
--- XXX Add DDLs here.
+DROP INDEX IF EXISTS plot_full_text_index;
 
 COMMIT;

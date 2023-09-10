@@ -2,6 +2,7 @@
 
 BEGIN;
 
--- XXX Add DDLs here.
+DROP COLUMN IF EXISTS search;
+DROP INDEX IF EXISTS idx_search;
 
 COMMIT;

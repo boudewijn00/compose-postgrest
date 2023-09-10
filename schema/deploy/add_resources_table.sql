@@ -7,6 +7,7 @@ CREATE TABLE resources (
     resource_id uuid NOT NULL,
     title text NOT NULL,
     contents text NOT NULL,
+    mime text NOT NULL,
     created_at timestamp with time zone NOT NULL DEFAULT now(),
     updated_at timestamp with time zone NOT NULL DEFAULT now()
 );

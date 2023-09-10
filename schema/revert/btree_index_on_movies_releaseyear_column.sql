@@ -2,6 +2,6 @@
 
 BEGIN;
 
--- XXX Add DDLs here.
+DROP INDEX IF EXISTS brin_index_on_movies_releaseyear_column;
 
 COMMIT;
