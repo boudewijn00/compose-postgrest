@@ -17,7 +17,7 @@ CREATE TABLE jobs (
     source_id int NOT NULL,
     feed_id int NOT NULL,
     remote_location boolean NOT NULL,
-    company_rating int NOT NULL,
+    company_rating float NOT NULL,
     company_review_count int NOT NULL,
     company_overview_link text,
     company_id_encrypted text NOT NULL,
