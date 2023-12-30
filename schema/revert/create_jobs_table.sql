@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE jobs;
+DROP TABLE indeed;
 
 COMMIT;
