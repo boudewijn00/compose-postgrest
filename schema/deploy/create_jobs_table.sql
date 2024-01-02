@@ -26,6 +26,7 @@ CREATE TABLE indeed (
     salary_max int,
     salary_type text,
     salary_currency text,
+    salary_year int,
     search_term text NOT NULL,
     snippet text,
     state text,
