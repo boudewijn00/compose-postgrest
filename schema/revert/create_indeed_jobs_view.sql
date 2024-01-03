@@ -2,6 +2,6 @@
 
 BEGIN;
 
--- XXX Add DDLs here.
+DROP VIEW indeed_jobs;
 
 COMMIT;
