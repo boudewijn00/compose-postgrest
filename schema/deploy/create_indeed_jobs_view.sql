@@ -17,7 +17,7 @@ max_salary_yearly,
 min_salary_yearly, 
 salary_currency,
 remote_work_model_type,
-more_loc_url,
+'https"//' || country || '.indeed.com' || more_loc_url,
 apply_count
 from indeed 
 where date(inserted_date) = CURRENT_DATE and to_timestamp(created_date)::date > '2023-01-01'
