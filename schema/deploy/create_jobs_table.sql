@@ -29,6 +29,7 @@ CREATE TABLE indeed (
     salary_type text,
     salary_currency text,
     search_term text NOT NULL,
+    skills text,
     snippet text,
     state text,
     title text NOT NULL,  
