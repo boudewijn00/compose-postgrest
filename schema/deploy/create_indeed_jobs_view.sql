@@ -21,6 +21,6 @@ remote_work_model_type,
 apply_count
 from indeed 
 where date(inserted_date) = CURRENT_DATE and to_timestamp(created_date)::date > '2023-01-01'
-order by max_salary_yearly desc;
+order by salary_max_yearly desc;
 
 COMMIT;
