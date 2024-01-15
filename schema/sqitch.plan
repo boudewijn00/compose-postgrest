@@ -12,4 +12,5 @@ add_resources_table 2023-09-05T19:26:02Z Boudewijn Overvliet <boudewijnovervliet
 note_readability_details 2023-12-17T19:11:56Z boudewijn overvliet <boudewijnovervliet@pop-os> # deploy/note_readability_details.sql\n     revert/note_readability_details.sql\n     verify/note_readability_details.sql
 create_jobs_table 2023-12-29T19:49:24Z Boudewijn Overvliet <boudewijnovervliet@BoudewiacStudio.fritz.box> # deploy/create_jobs_table.sql\n     revert/create_jobs_table.sql
 create_indeed_jobs_view 2024-01-03T12:42:12Z boudewijn overvliet <boudewijnovervliet@pop-os> # deploy/create_indeed_jobs_view.sql\n     revert/create_indeed_jobs_view.sql
-create_full_text_search_indeed_description 2024-01-03T18:49:48Z Boudewijn Overvliet <boudewijnovervliet@BoudewiacStudio.fritz.box> #      deploy/create_full_text_search_indeed_description.sql\n     revert/create_full_text_search_indeed_description.sql
+create_full_text_search_indeed_description 2024-01-03T18:49:48Z Boudewijn Overvliet <boudewijnovervliet@BoudewiacStudio.fritz.box> # deploy/create_full_text_search_indeed_description.sql\n     revert/create_full_text_search_indeed_description.sql
+create_gumroad_table 2024-01-15T18:46:24Z Boudewijn Overvliet <boudewijnovervliet@Boudewijns-Mac-Studio.fritz.box> #      deploy/create_gumroad_table.sql\n     revert/create_gumroad_table.sql
