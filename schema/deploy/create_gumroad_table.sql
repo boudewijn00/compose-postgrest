@@ -14,7 +14,7 @@ CREATE TABLE gumroad (
     product_name text NOT NULL,
     rating_counts json NOT NULL,
     refund_policy json,
-    sales_count int
+    sales_count int,
     seller_name text NOT NULL,
     seller_id bigint NOT NULL,
     seller_profile_url text NOT NULL,
