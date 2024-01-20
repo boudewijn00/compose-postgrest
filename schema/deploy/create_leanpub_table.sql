@@ -5,7 +5,7 @@ BEGIN;
 CREATE TABLE leanpub (
     about text NOT NULL,
     author_avatar text,
-    author_git_hub text,
+    author_github text,
     author_id int NOT NULL,
     author_linkedin text,
     author_mastodon text,
