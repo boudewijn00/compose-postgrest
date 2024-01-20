@@ -35,7 +35,7 @@ CREATE TABLE leanpub (
     subtitle text,
     suggested_price decimal NOT NULL,
     title text NOT NULL,
-    toc text
+    toc text,
     type text NOT NULL,
     updated_at timestamp with time zone NOT NULL DEFAULT now(),
     url text NOT NULL,
