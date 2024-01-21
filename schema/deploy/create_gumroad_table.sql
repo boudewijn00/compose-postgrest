@@ -7,7 +7,7 @@ CREATE TABLE gumroad (
     attributes json,
     bundle_products json,
     currency_code text NOT NULL,
-    descriptio_html text NOT NULL,
+    description_html text NOT NULL,
     external_id text NOT NULL,
     free_trial boolean,
     price_cents int NOT NULL,
