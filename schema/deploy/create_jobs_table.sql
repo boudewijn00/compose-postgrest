@@ -9,7 +9,7 @@ CREATE TABLE indeed (
     company_rating decimal NOT NULL,
     company_review_count int NOT NULL,
     company_overview_link text,
-    company_id_encrypted text NOT NULL,
+    company_id_encrypted text,
     country text NOT NULL,
     description text,
     expired boolean NOT NULL,
